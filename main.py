@@ -1,12 +1,13 @@
 import discord 
 from discord.ext import commands
+import requests
+import json
+import random
 import os 
 from dotenv import load_dotenv
 load_dotenv()
-import requests as rq
-import json
-import random
-from test import *   
+
+ 
 
 client = discord.Client()
 client = commands.Bot(command_prefix='b!')
