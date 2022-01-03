@@ -22,6 +22,10 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('ur cringe')
 
+@client.command()
+async def imagine(ctx):
+    await ctx.send('Imagine dragging these nuts on your face.')    
+
 
 client.run(os.getenv("TOKEN"))
 
