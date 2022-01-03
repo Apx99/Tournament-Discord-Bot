@@ -19,15 +19,33 @@ for i in range(playersNum):
     PlayerNames.append(element)
 
 
+# class Team:
 
+#     def __init__(self, name, players):
+#         self.name = name
+#         self.players = players
+#         self.score = 0
 
 # Tournament functions that build the tournament type //oneVT = one vs one... etc 
 def oneVO():
     ovoBracket = []
     winner = []
     seed = playersNum
+
+
     for x in PlayerNames: 
         ovoBracket.append(PlayerNames)
+
+    
+
+    # ovoBracket.random.shuffle()
+    # while len(winner) > 1:
+    #     for i in range(0, len(ovoBracket), 2):
+    #         team = getWinner(ovoBracket[i], ovoBracket[i+1])
+    #         winner.append(team)
+
+
+    #     ovoBracket = winner
 
     random.shuffle(ovoBracket)
     print(ovoBracket)             
